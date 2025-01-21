@@ -1,4 +1,4 @@
-# Step-by-Step Guide to Setting Up Express with TypeScript
+# Step-by-Step Guide to Setting Up Express with TypeScript (Complete Version)
 
 ## Prerequisites
 
@@ -9,8 +9,8 @@
 First, create new project with the following command:
 
 ```bash
-mkdir express-typescript-tutorial
-cd express-typescript-tutorial
+mkdir express-typescript-complete-starter
+cd express-typescript-complete-starter
 npm init -y
 ```
 
@@ -24,7 +24,7 @@ npx prisma db push
 npx prisma generate
 ```
 
-## Step 3: Setup TypeScript
+## Step 3: Configure TypeScript
 
 To initialize TypeScript, run this command:
 
@@ -89,10 +89,6 @@ export default [
 ## Step 5: Update package.json scripts
 
 ```json
-  "name": "express-typescript-tutorial",
-  "version": "1.0.0",
-  "description": "Express TypeScript Tutorial",
-  "main": "server.ts",
   "scripts": {
     "build": "tsc --build",
     "start": "node ./dist/server.js",
@@ -112,7 +108,7 @@ In the **.env** file add the following content:
 
 ```bash
 DATABASE_URL="file:./dev.db"
-APP_ORIGIN=http://localhost:5173 # The URL of your React app
+APP_ORIGIN=http://localhost:5173 # The URL of your frontend app
 API_URL=http://localhost:3000 # The URL of your Express app
 PORT=3000 # The port your Express app is running on
 NODE_ENV=development # Set to "production" in a production environment
@@ -373,6 +369,7 @@ Server will be running on `http://localhost:3000`.
 ## Final project structure
 
 ```css
+express-typescript-complete-starter
 ├── src
 │   ├── routes
 │   │   ├── mainRouter.ts
@@ -400,11 +397,4 @@ Server will be running on `http://localhost:3000`.
 ├── package-lock.json
 ├── package.json
 └── tsconfig.json
-```
-
-To import modules with path alias, you can use the following code:
-
-```ts
-import <module_name> from '@/module_name'; // recommended
-import <module_name> from '../../../module_name'; // not recommended
 ```

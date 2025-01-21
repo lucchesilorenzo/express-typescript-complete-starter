@@ -1,7 +1,7 @@
 {
-  "name": "express-typescript-starter",
+  "name": "express-typescript-complete-starter",
   "version": "1.0.0",
-  "description": "A starter for Express with TypeScript, including Prisma, Zod, jsonwebtoken and more.",
+  "description": "A complete starter for Express with TypeScript, including Prisma, Zod, jsonwebtoken and more.",
   "main": "src/server.ts",
   "scripts": {
     "build": "tsc --build",
