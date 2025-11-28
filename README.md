@@ -17,8 +17,8 @@ npm init -y
 ## Step 2: Install Dependencies
 
 ```bash
-npm i express@^5.0.1 cors morgan @prisma/client helmet zod ts-patch typescript-transform-paths axios bcryptjs helmet jsonwebtoken
-npm i typescript ts-node eslint prisma @types/express @types/node @types/morgan @types/cors @eslint/js @types/bcryptjs @types/jsonwebtoken -D
+npm i express@^5.0.1 cors morgan @prisma/client helmet zod axios bcryptjs jsonwebtoken
+npm i -D typescript ts-patch typescript-transform-paths ts-node eslint prisma @types/express @types/node @types/morgan @types/cors @eslint/js @types/bcryptjs @types/jsonwebtoken
 npx prisma init --datasource-provider sqlite
 npx prisma db push
 npx prisma generate
