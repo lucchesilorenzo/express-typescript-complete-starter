@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
-import env from "../lib/env";
+import { env } from "../lib/env";
 
 export default function authMiddleware(
   req: Request,

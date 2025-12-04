@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import env from "../lib/env";
+import { env } from "../lib/env";
 
 /* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any*/
 export default function errorMiddleware(
